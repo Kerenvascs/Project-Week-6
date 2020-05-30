@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Bank Marketing Analysis
+*Keren Amanda V. de Vasconcelos*
 
-*[Your Cohort, Campus & Date]*
+*[Data Analytics Part Time, Ironhack Lisbon & 30/05/2020]*
 
 ## Content
 - [Project Description](#project-description)
@@ -16,35 +16,27 @@
 <a name="project-description"></a>
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show. 
+For the final project of the Statistical module I chose to do marketing analysis of a bank campaign in Portugal, i chose that topic because i really wanted to work with a real-world problem, besides that, telemarketing calls can be very expansive and I wanted to identify the best customer profile to improve the marketing campaign and improve its results.
 
 <a name="hypotheses-/-questions"></a>
 
 ## Hypotheses / Questions
-What are the questions you would like to answer with your project? Write your hypotheses here.
+My business question is:  Wich costumer will subscribe for a bank deposit?
 
 <a name="dataset"></a>
 
 ## Dataset
-Where did you get your data? What dataset did you use or did you build your own datset? If so, did you use an API? Did you scrape a web? Provide links to the data if available.
-
-[Dataset]() 
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be (or not) subscribed.
+Source : UCI Machine Learning Repository https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
 
 <a name="workflow"></a>
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps you went through?
+Research on topic and try to find an apropriate dataset, establish business questions, data cleaning, exploratory data analysis and data visualizations (on Tableau), and finally build a model.
 
 <a name="organization"></a>
 
 ## Organization
-How did you organize yourself? Did you use any tools?
+Trello
 
 <a name="links"></a>
-
-## Links
-Include the links to your repository, slides and trello. Feel free to include any other links associated to your project. 
-
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  

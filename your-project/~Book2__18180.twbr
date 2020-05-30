@@ -1,0 +1,1290 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bank-full' inline='true' name='federated.0iczf120stml5t11r3yjv0cmoaru' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bank-full' name='textscan.0fr9q4a1jtcdqc12bp3pz04reh8i'>
+            <connection class='textscan' directory='D:/2.Repositories/Ironhack/Module 2/Projects/Project-Week-6/your-project/data' filename='bank-full.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fr9q4a1jtcdqc12bp3pz04reh8i' name='bank-full.csv' table='[bank-full#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_PT' separator=';'>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='string' name='job' ordinal='1' />
+            <column datatype='string' name='marital' ordinal='2' />
+            <column datatype='string' name='education' ordinal='3' />
+            <column datatype='string' name='default' ordinal='4' />
+            <column datatype='integer' name='balance' ordinal='5' />
+            <column datatype='string' name='housing' ordinal='6' />
+            <column datatype='string' name='loan' ordinal='7' />
+            <column datatype='string' name='contact' ordinal='8' />
+            <column datatype='integer' name='day' ordinal='9' />
+            <column datatype='string' name='month' ordinal='10' />
+            <column datatype='integer' name='duration' ordinal='11' />
+            <column datatype='integer' name='campaign' ordinal='12' />
+            <column datatype='integer' name='pdays' ordinal='13' />
+            <column datatype='integer' name='previous' ordinal='14' />
+            <column datatype='string' name='poutcome' ordinal='15' />
+            <column datatype='string' name='y' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>job</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marital]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>marital</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[education]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>education</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[default]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>default</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>housing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[housing]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>housing</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loan]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>loan</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contact]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>contact</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[campaign]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>campaign</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdays</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pdays]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>pdays</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>previous</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>poutcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[poutcome]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>poutcome</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Opted' datatype='boolean' name='[Calculation_680325072770166784]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[y] = &apos;yes&apos;' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[duration (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[duration]' peg='0' size='133' />
+      </column>
+      <column datatype='integer' name='[duration]' role='measure' type='quantitative' />
+      <column datatype='string' name='[marital]' role='dimension' type='nominal' />
+      <column datatype='string' name='[y]' role='dimension' type='nominal' />
+      <column-instance column='[duration]' derivation='Count' name='[cnt:duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[duration (bin)]' derivation='None' name='[none:duration (bin):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[duration]' derivation='None' name='[none:duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[marital]' derivation='None' name='[none:marital:nk]' pivot='key' type='nominal' />
+      <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+      <column-instance column='[duration]' derivation='Sum' name='[sum:duration:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (duration (bin),y)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:duration (bin):qk]' />
+          <groupfilter function='level-members' level='[none:y:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.63278' measure-ordering='alphabetic' measure-percentage='0.36722' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:duration:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0iczf120stml5t11r3yjv0cmoaru].[none:duration:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0iczf120stml5t11r3yjv0cmoaru].[sum:duration:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:marital:nk]' type='palette'>
+            <map to='#00007f'>
+              <bucket>&quot;single&quot;</bucket>
+            </map>
+            <map to='#06936a'>
+              <bucket>&quot;married&quot;</bucket>
+            </map>
+            <map to='#09fcb4'>
+              <bucket>&quot;divorced&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:y:nk]' type='palette'>
+            <map to='#00007f'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map>
+            <map to='#09fcb4'>
+              <bucket>&quot;no&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Portugal&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Education' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='education' />
+        <param name='target' value='Education' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Ages'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:age:qk]' value='14' />
+            <format attr='font-size' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:age:qk]' value='14' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebf0f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:age:qk]</rows>
+        <cols>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{C9D89CFD-294C-4832-9397-B33246AA6AD5}' />
+    </worksheet>
+    <worksheet name='Education'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column-instance column='[y]' derivation='Count' name='[cnt:y:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='Count' name='[pcto:cnt:y:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:education:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-size' scope='cols' value='14' />
+            <format attr='font-size' scope='rows' value='14' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:education:nk]' value='12' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebf0f2' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+              <text column='[federated.0iczf120stml5t11r3yjv0cmoaru].[pcto:cnt:y:qk:6]' />
+              <lod column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]</rows>
+        <cols>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:education:nk]</cols>
+      </table>
+      <simple-id uuid='{D2207B00-6C46-4EB9-A12B-2419DB2B4680}' />
+    </worksheet>
+    <worksheet name='Job'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column-instance column='[y]' derivation='Count' name='[cnt:y:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column-instance column='[job]' derivation='None' name='[none:job:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='Count' name='[pcto:cnt:y:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:job:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;blue-collar&quot;</bucket>
+              <bucket>&quot;management&quot;</bucket>
+              <bucket>&quot;technician&quot;</bucket>
+              <bucket>&quot;admin.&quot;</bucket>
+              <bucket>&quot;services&quot;</bucket>
+              <bucket>&quot;retired&quot;</bucket>
+              <bucket>&quot;self-employed&quot;</bucket>
+              <bucket>&quot;entrepreneur&quot;</bucket>
+              <bucket>&quot;unemployed&quot;</bucket>
+              <bucket>&quot;housemaid&quot;</bucket>
+              <bucket>&quot;student&quot;</bucket>
+              <bucket>&quot;unknown&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:job:nk]' value='14' />
+            <format attr='text-orientation' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:job:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebf0f2' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+              <text column='[federated.0iczf120stml5t11r3yjv0cmoaru].[pcto:cnt:y:qk:6]' />
+              <lod column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;[federated.0iczf120stml5t11r3yjv0cmoaru].[pcto:cnt:y:qk:6]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]</rows>
+        <cols>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:job:nk]</cols>
+      </table>
+      <simple-id uuid='{0FD54B42-FE0A-4D4F-BB9E-5E3D789F7076}' />
+    </worksheet>
+    <worksheet name='MArital'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column caption='0' datatype='integer' name='[Calculation_680325073502871554]' role='measure' type='quantitative' user:unnamed='MArital'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='1' datatype='integer' name='[Calculation_680325073502920708]' role='measure' type='quantitative' user:unnamed='MArital'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[y]' derivation='Count' name='[cnt:y:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[marital]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_680325073502871554]' derivation='None' name='[none:Calculation_680325073502871554:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_680325073502920708]' derivation='None' name='[none:Calculation_680325073502920708:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[marital]' derivation='None' name='[none:marital:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]'>
+            <groupfilter function='member' level='[none:y:nk]' member='&quot;yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502920708:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502920708:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502871554:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='552' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebf0f2' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' value='Marital Status' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.5052486658096313' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502871554:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]' />
+              <text column='[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]' />
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.5052486658096313' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502920708:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='0.82359117269515991' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ebf0f2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502871554:qk] + [federated.0iczf120stml5t11r3yjv0cmoaru].[none:Calculation_680325073502920708:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5E0655E0-9DDF-4C0E-A1DB-914889DB55E2}' />
+    </worksheet>
+    <worksheet name='MOnths'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:y:nk]' member='&quot;no&quot;' />
+              <groupfilter function='member' level='[none:y:nk]' member='&quot;yes&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebf0f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3F31A17D-56A8-4984-83EA-F47446A407F6}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column-instance column='[duration]' derivation='Count' name='[cnt:duration:qk]' pivot='key' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[duration (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[duration]' peg='0' size='133' />
+            </column>
+            <column datatype='integer' name='[duration]' role='measure' type='quantitative' />
+            <column-instance column='[duration (bin)]' derivation='None' name='[none:duration (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iczf120stml5t11r3yjv0cmoaru].[Exclusions (duration (bin),y)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:duration (bin):qk]' />
+                <groupfilter function='level-members' level='[none:y:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:y:nk]' member='&quot;no&quot;' />
+                    <groupfilter function='member' level='[none:duration (bin):qk]' member='0' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:y:nk]' member='&quot;yes&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[none:duration (bin):qk]' member='0' />
+                      <groupfilter function='member' level='[none:duration (bin):qk]' member='23' />
+                      <groupfilter function='member' level='[none:duration (bin):qk]' member='29' />
+                    </groupfilter>
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:duration (bin):qk]' />
+                  <hierarchy name='[none:y:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]'>
+            <groupfilter function='member' level='[none:y:nk]' member='&quot;yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]</column>
+            <column>[federated.0iczf120stml5t11r3yjv0cmoaru].[Exclusions (duration (bin),y)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebf0f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+              <lod column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#06936a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:duration:qk]</rows>
+        <cols>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:duration (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0iczf120stml5t11r3yjv0cmoaru].[duration (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{4FD40D7A-6F3F-4393-AC91-09BA0F534C2A}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column datatype='string' name='[marital]' role='dimension' type='nominal' />
+            <column-instance column='[marital]' derivation='None' name='[none:marital:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column-instance column='[y]' derivation='Count' name='[pcto:cnt:y:qk:8]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]'>
+            <groupfilter function='member' level='[none:y:nk]' member='&quot;yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' />
+              <wedge-size column='[federated.0iczf120stml5t11r3yjv0cmoaru].[pcto:cnt:y:qk:8]' />
+              <size column='[federated.0iczf120stml5t11r3yjv0cmoaru].[pcto:cnt:y:qk:8]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{689A3518-3104-498C-974F-46142F01A090}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.0iczf120stml5t11r3yjv0cmoaru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iczf120stml5t11r3yjv0cmoaru'>
+            <column datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column-instance column='[y]' derivation='Count' name='[cnt:y:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[duration]' role='measure' type='quantitative' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[duration]' derivation='None' name='[none:duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='None' name='[none:y:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' />
+              <lod column='[federated.0iczf120stml5t11r3yjv0cmoaru].[cnt:y:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:duration:qk]</rows>
+        <cols>[federated.0iczf120stml5t11r3yjv0cmoaru].[none:campaign:qk]</cols>
+      </table>
+      <simple-id uuid='{076ADC50-64B2-41FD-98BD-81CD891D2DBF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='40625' id='3' name='MArital' w='47400' x='3200' y='12250'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ebf0f2' />
+          </zone-style>
+        </zone>
+        <zone h='9750' id='4' name='MArital' pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' type='color' w='10200' x='39000' y='43250'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ebf0f2' />
+          </zone-style>
+        </zone>
+        <zone h='24625' id='5' name='Education' w='33300' x='55200' y='15750' />
+        <zone h='7250' id='6' name='Education' pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' w='14000' x='39200' y='15750' />
+        <zone h='31000' id='7' name='Job' w='40800' x='53100' y='43000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='8' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='40625' id='3' is-fixed='true' name='MArital' w='47400' x='3200' y='12250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ebf0f2' />
+                  </zone-style>
+                </zone>
+                <zone h='9750' id='4' name='MArital' pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' type='color' w='10200' x='39000' y='43250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ebf0f2' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='5' is-fixed='true' name='Education' w='33300' x='55200' y='15750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7250' id='6' name='Education' pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' w='14000' x='39200' y='15750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='248' h='31000' id='7' is-fixed='true' name='Job' w='40800' x='53100' y='43000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{47303191-37E4-4819-A941-5582C90D9C08}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='56500' id='3' name='MArital' w='52800' x='1200' y='4000' />
+        <zone h='9750' id='4' name='MArital' pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' type='color' w='14000' x='54000' y='21500' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='56500' id='3' is-fixed='true' name='MArital' w='52800' x='1200' y='4000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9750' id='4' name='MArital' pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' type='color' w='14000' x='54000' y='21500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0E7751C7-801A-4F5A-BB9F-2BE2CA51915E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='MArital'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7D62FFD6-09DD-42BD-BAFB-538D2CAC2A95}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:marital:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[pcto:cnt:y:qk:8]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B8E813E8-3DB7-4564-A258-3135A822CCAE}' />
+    </window>
+    <window class='worksheet' name='Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='1' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EEEE4E55-0478-4130-979B-AD3DAC63B902}' />
+    </window>
+    <window class='worksheet' name='Ages'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD94E677-EF46-4F87-9B8A-76CA79E0E8FB}' />
+    </window>
+    <window class='worksheet' name='Job'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F75A0E4C-4A7D-45F1-9F88-76F131157C1F}' />
+    </window>
+    <window class='worksheet' name='MOnths'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{803BBBED-2751-443A-8EA1-C349069C689E}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{207E3D72-F92C-48E4-AA26-E8300441CB0E}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iczf120stml5t11r3yjv0cmoaru].[none:y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B616F4E2-7A8E-48A3-B8CA-7573CE4525EB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Education'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Job'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='MArital'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{33A001A4-7764-405F-88AF-4C515761BC74}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='MArital'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{26B66574-F020-4B59-ADA0-A50591A5F9F4}' />
+    </window>
+  </windows>
+</workbook>
